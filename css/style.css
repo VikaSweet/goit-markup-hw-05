@@ -90,9 +90,7 @@ border-radius: 2px;
 transform: scalex(0);
 transition:transform var(--timing-function);
 }
-.nav-link:hover::after {
-  transform: scalex(1);
-}
+
 .nav-list {
   display: flex;
   margin-left: auto;
