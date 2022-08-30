@@ -122,8 +122,7 @@ margin-right: 50px;
 display: flex;
 align-items: center;
 fill: currentColor;
-transition-duration: var(--transition-duration);
-transition-timing-function: var(--transition-timing-function);
+transition: color var(--timing-function);
 }
 .mail-icon {
   margin-right: 10px;
@@ -214,7 +213,7 @@ margin-right: auto;
 margin-left: auto;
 margin-right: auto;
   border-radius: 4px;
-  transition: background-color, box-shadow, border-radius var(--timing-function);
+  transition: background-color var(--timing-function), box-shadow var(--timing-function), border-radius var(--timing-function);
 }
 .text-button-order {
   padding: 10px 32px;
@@ -677,7 +676,7 @@ margin-bottom: 9px;
   cursor: pointer;
   background-color: var(--background-second-composite);
   border-radius: 4px;
-  transition: color, background-color, box-shadow, border-radius var(--timing-function);
+  transition: color var(--timing-function), background-color var(--timing-function), box-shadow var(--timing-function), border-radius var(--timing-function);
   }
 .buttons-list {
 display: flex;
@@ -753,7 +752,7 @@ border-radius: 4px;
 }
 .nav-img-web {
   display: block;
-  transition: border, box-shadow var(--timing-function);
+  transition: border var(--timing-function), box-shadow var(--timing-function);
 }
 img {
   display: block;
