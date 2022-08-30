@@ -354,32 +354,8 @@ position: relative;
   bottom: 0;
   background-color: rgba(47, 48, 58, 0.8);
 }
-.averlay-card {
-  position: absolute;
-  width: 370px;
-  height: 70px;
-  left: 615px;
-  top: 1435px;
-  background: rgba(47, 48, 58, 0.8);
-  opacity: 0.1;
-}
-.text-card {
-  width: 199px;
-  height: 16px;
-  left: 701px;
-  top: 1462px;
-  
-  font-family: var(--primary-font-family);
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  
-}
+
+
 /*--our-staff---------*/
 
 .section-staff {
