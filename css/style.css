@@ -22,8 +22,7 @@ h1, h2, h3, p, ul, nav {
   --background-origin: #ffffff;
   --background-first-composite: #2f303a;
   --background-second-composite: #f5f4fa;
-  --transition-duration: 250ms;
-  --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --timing-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*--body-style--*/
 .body {
@@ -133,8 +132,7 @@ transition-timing-function: var(--transition-timing-function);
   display: flex;
   align-items: center;
   fill: currentColor;
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--transition-timing-function);
+  transition: color var(--timing-function);
   }
   .phone-icon {
     margin-right: 10px;
@@ -167,8 +165,7 @@ transition-timing-function: var(--transition-timing-function);
   color: var(--secondary-text-color);
   padding-top: 32px;
   padding-bottom: 32px;
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--transition-timing-function);
+  transition: color var(--timing-function);
 }
 .text-nav-contacts:hover,
 .text-nav-contacts:focus{
@@ -217,8 +214,7 @@ margin-right: auto;
 margin-left: auto;
 margin-right: auto;
   border-radius: 4px;
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--transition-timing-function);
+  transition: background-color, box-shadow, border-radius var(--timing-function);
 }
 .text-button-order {
   padding: 10px 32px;
@@ -451,16 +447,14 @@ gap: 10px;
   color: rgba(175, 177, 184, 1);
   border-radius: 50%;
 fill: currentColor;
-transition-duration: var(--transition-duration);
-transition-timing-function: var(--transition-timing-function);
+transition: backgraound-color var(--timing-function);
 }
 
 .link-svg {
  border-radius: 50%;
 }
 .svg-card {
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--transition-timing-function);
+  transition: fill var(--timing-function);
 }
 .icons-link:hover .svg-card {
   fill: #ffffff;
@@ -517,8 +511,7 @@ transition-timing-function: var(--transition-timing-function);
   border: 1px solid rgba(175, 177, 184, 1);
   width: 170px;
   height: 92px;
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--transition-timing-function);
+  transition: border-color var(--timing-function);
 }
 .icon-clients:first-child {
   margin-left: 0;
@@ -532,8 +525,7 @@ transition-timing-function: var(--transition-timing-function);
 }
   .svg {
 fill: rgba(175, 177, 184, 1);
-transition-duration: var(--transition-duration);
-transition-timing-function: var(--transition-timing-function);
+transition: fill var(--timing-function);
 } 
  .clients-link:hover {
   border-color: var(--accent-color);
@@ -579,9 +571,8 @@ justify-content: left;
 
 .footer-link {
   display:flex;
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--transition-timing-function);
-}
+  transition: color var(--timing-function);
+  }
 .footer-link:hover {
   color: var(--accent-color);
 }
@@ -651,8 +642,7 @@ margin-bottom: 9px;
     padding: 0;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
-    transition-duration: var(--transition-duration);
-    transition-timing-function: var(--transition-timing-function);
+    transition: background-color var(--timing-function);
 }
 
 .network-svg {
@@ -687,8 +677,7 @@ margin-bottom: 9px;
   cursor: pointer;
   background-color: var(--background-second-composite);
   border-radius: 4px;
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--transition-timing-function);
+  transition: color, background-color, box-shadow, border-radius var(--timing-function);
   }
 .buttons-list {
 display: flex;
@@ -764,8 +753,7 @@ border-radius: 4px;
 }
 .nav-img-web {
   display: block;
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--transition-timing-function);
+  transition: border, box-shadow var(--timing-function);
 }
 img {
   display: block;
