@@ -832,12 +832,14 @@ left: 0;
 top: 0;
 background: rgba(33, 150, 243, 0.9);
 opacity:0 ;
-transform: translateY(-100%);
+transform: translateY(100%);
 transition: transform var(--timing-function);
   }
   .link-img:hover .card-tumb::before {
 opacity: 1;
 transform: translateY(0);
+transition: transform var(--timing-function);
+  }
   }
   .card-action {
    display: block;
@@ -847,10 +849,14 @@ transform: translateY(0);
    bottom: 63px;
    left: 24px;
    opacity: 0;
+   transform: translateY(100%);
    transition: transform var(--timing-function);
   }
   .card-action:hover {
     opacity: 1;
+    transform: translateY(0);
+    transition: transform var(--timing-function);
+  }
   }
   .text-action {
     font-family: var(--primary-font-family);
