@@ -840,7 +840,7 @@ opacity: 1;
 transform: translateY(0);
 transition: transform var(--timing-function);
   }
-  }
+  
   .card-action {
    display: block;
    position: absolute;
@@ -852,12 +852,12 @@ transition: transform var(--timing-function);
    transform: translateY(100%);
    transition: transform var(--timing-function);
   }
-  .card-action:hover {
+  .link-img:hover .card-action {
     opacity: 1;
     transform: translateY(0);
     transition: transform var(--timing-function);
   }
-  }
+  
   .text-action {
     font-family: var(--primary-font-family);
     font-style: normal;
