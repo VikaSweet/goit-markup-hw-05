@@ -81,7 +81,7 @@ border-bottom: 1px solid rgb(236, 236, 236, 1);
 position: relative;
 }
 
-.link-studio::after {
+.nav-accent::after {
   content: "";
   position: absolute;
   left: 0;
@@ -91,7 +91,7 @@ position: relative;
   height: 4px;
   background: var(--accent-color);
 border-radius: 2px;
-transform: scalex(0);
+transform: scalex(1);
 transition:transform var(--timing-function);
 }
 
@@ -99,7 +99,7 @@ transition:transform var(--timing-function);
   position: relative;
   }
 
-.link-portfolio::after {
+.nav-accent::after {
   content: "";
   position: absolute;
   left: 0;
@@ -109,7 +109,7 @@ transition:transform var(--timing-function);
   height: 4px;
   background: var(--accent-color);
 border-radius: 2px;
-transform: scalex(0);
+transform: scalex(1);
 transition:transform var(--timing-function);
 }
 .nav-list {
