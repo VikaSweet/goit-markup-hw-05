@@ -77,7 +77,11 @@ border-bottom: 1px solid rgb(236, 236, 236, 1);
 .nav-link:focus {
   color: var(--accent-color);
 }
-.nav-link::after {
+.link-studio {
+position: relative;
+}
+
+.link-studio::after {
   content: "";
   position: absolute;
   left: 0;
@@ -90,7 +94,9 @@ border-radius: 2px;
 transform: scalex(0);
 transition:transform var(--timing-function);
 }
-
+.link-studio:hover::after {
+  transform: scaleX(1);
+}
 .nav-list {
   display: flex;
   margin-left: auto;
