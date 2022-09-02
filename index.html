@@ -77,13 +77,26 @@
     <main>
       <!--hero-->
       <section class="overlay">
-        <div class="section-hero"> 
+      <div class="section-hero"> 
         <div class="container">
           <h1 class="title-hero">Эффективные решения для вашего бизнеса</h1>
-          <button class="button-order text-button-order" type="button">
+         <div class="overlay-button">
+          <div class="action-button">
+          <button class="button-order text-button-order" data-open-modal type="button">
             Заказать услугу
           </button>
-        </div></div>
+        </div>
+      </div>
+            <div class="backdrop is-hidden" data-backdrop>
+              <div class="modal">
+                <button data-close-modal>
+                  <svg class="close-modal">
+                    <use class="svg-close" href="./images/close_modal.svg#icon-close_modal"></use>
+                  </svg> 
+                </button>
+              </div>
+            </div>
+            </div></div>
       </section>
       <!--best-items-->
       <section class="section-best-item section">
