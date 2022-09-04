@@ -305,7 +305,12 @@ transition: background-color var(--timing-function), transform var(--timing-func
 flex-direction: block;
 }
 .svg-close {
-
+  box-sizing: border-box;
+  position: absolute;
+  left: 1026px;
+  top: 229px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 /*--best-item---------*/
