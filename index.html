@@ -82,22 +82,12 @@
           <h1 class="title-hero">Эффективные решения для вашего бизнеса</h1>
          <div class="overlay-button">
           <div class="action-button">
-          <button class="button-order text-button-order" data-open-modal type="button">
+          <button class="button-order text-button-order" data-modal-open type="button">
             Заказать услугу
           </button>
         </div>
       </div>
-            <div class="backdrop is-hidden" data-modal>
-              <div class="modal">
-                <button data-close-modal>
-                  <svg class="modal-close" width="30px";
-                  height="30px">
-                    <use class="svg-close" href="./images/close_modal.svg#icon-close_modal"></use>
-                  </svg> 
-                </button>
-              </div>
-            </div>
-            </div></div>
+        </div></div>
       </section>
       <!--best-items-->
       <section class="section-best-item section">
@@ -469,6 +459,16 @@
      </div>
      </div>
      </footer>
+     <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-close-btn"data-modal-close type="button">
+          <svg class="close-modal-icon" width="30";
+          height="30">
+            <use href="./images/close_modal.svg#icon-close_modal"></use>
+          </svg> 
+        </button>
+      </div>
+    </div>
      <script src="./js/modal.js"></script>
   </body>
 </html>

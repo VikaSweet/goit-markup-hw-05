@@ -264,53 +264,55 @@ margin-right: auto;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;;
 }
-.overlay-button {
-position: absolute;
+ 
+ .backdrop{
+ position: fixed;
 width: 100%;
 height: 100%;
 left: 0px;
 top: 0px;
-opacity: 0;
-transform: scale();
+z-index: 100;
+opacity: 1;
 background: rgba(0, 0, 0, 0.2);
+visibility: visible;
+pointer-events: auto;
 transition: background-color var(--timing-function),opasity var(--timing-function),
 transform var(--timing-function);
 }
-.action-button {
 
-}
 .backdrop .is-hidden {
 opacity: 0;
+visibility: hidden;
 pointer-events: none;
-}
-.backdrop .is-hidden.modal {
-  transform: translate(-50%, -50%) scale(0.9); 
-  transition: transform var(--timing-function);
 }
 .modal { 
 position: absolute;
 width: 528px;
-height: 581px;
-left: 536px;
-top: 221px;
+height: 580px;
+left: 50%;
+top: 50%;
 
 background: #FFFFFF;
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 4px;
-transform: translate(-50%, -50%) scale(1);
+transform: translate(-50%, -50%);
 transition: background-color var(--timing-function), transform var(--timing-function);
 
 }
-.close-modal {
-flex-direction: block;
-}
-.svg-close {
+.modal-close-bt {
+position: absolute;
   box-sizing: border-box;
   position: absolute;
   left: 1026px;
-  top: 229px;
-  background: #FFFFFF;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  padding: 0;
 }
 
 /*--best-item---------*/
