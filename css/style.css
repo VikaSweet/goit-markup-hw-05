@@ -299,7 +299,7 @@ transform: translate(-50%, -50%);
 transition: background-color var(--timing-function), transform var(--timing-function);
 
 }
-.modal-close-bt {
+.modal-close-btn {
 position: absolute;
   background-color: #FFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.1);
