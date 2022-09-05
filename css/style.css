@@ -302,7 +302,6 @@ transition: background-color var(--timing-function), transform var(--timing-func
 .modal-close-bt {
 position: absolute;
   box-sizing: border-box;
-  display: flex;
   background-color: #FFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.1);
   
@@ -312,8 +311,6 @@ position: absolute;
   left: auto;
   top: 8px;
   right: 8px;
-  align-items: center;
-  justify-content: center;
   border-radius: 50%;
   padding: 0;
 }
