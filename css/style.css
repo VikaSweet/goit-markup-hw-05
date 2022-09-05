@@ -312,9 +312,13 @@ position: absolute;
   justify-content: center;
   border-radius: 50%;
   padding: 0;
-  
+  }
+.close-modal-icon {
+  left: auto;
+  top: 8px;
+  right: 8px;
+  border-radius: 50%;
 }
-
 /*--best-item---------*/
 .section-best-item {
   background-color: var(--background-origin);
