@@ -303,17 +303,16 @@ transition: background-color var(--timing-function), transform var(--timing-func
 position: absolute;
   background-color: #FFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 30px;
+  height: 30px;
   left: auto;
   top: 8px;
   right: 8px;
   border-radius: 50%;
   padding: 0;
-  }
-.close-modal-icon {
   display: flex;
   align-items: center;
   justify-content: center
-  background-color: #FFFFFF;
 }
 /*--best-item---------*/
 .section-best-item {
