@@ -595,7 +595,8 @@ transition: background-color var(--timing-function),color var(--timing-function)
   border: 1px solid rgba(175, 177, 184, 1);
   width: 170px;
   height: 92px;
-  transition: border-color var(--timing-function);
+  fill: rgba(175, 177, 184, 1)
+  transition: border-color var(--timing-function),fill var(var(--timing-function));
 }
 .icon-clients:first-child {
   margin-left: 0;
@@ -607,20 +608,12 @@ transition: background-color var(--timing-function),color var(--timing-function)
   display: block;
    content: "";
 }
-  .svg {
-fill: rgba(175, 177, 184, 1);
-transition: fill var(--timing-function);
-} 
- .clients-link:hover {
+  .clients-link:hover {
   border-color: var(--accent-color);
+  fill:var(--accent-color);
 }
 .clients-link:focus {
   border-color:var(--accent-color);
-}
-.clients-link:focus .svg {
-  fill: var(--accent-color);
-}
-.clients-link:hover .svg {
   fill:var(--accent-color);
 }
 
@@ -644,13 +637,14 @@ align-items: baseline;
     display: inline-block;
     flex-direction: column;
     margin-bottom: 20px;
-margin-bottom: 20px;
+  margin-bottom: 20px;
   }
 
 .footer-contacts {
 display: flex;
 flex-direction: column;
 justify-content: left;
+margin-top: 20px;
 }
 
 .footer-link {
@@ -687,6 +681,7 @@ justify-content: left;
 }
 .contact-nav {
 margin-bottom: 9px;
+
 }
 /*--social-networks----*/
 .network-container {
@@ -701,7 +696,7 @@ margin-bottom: 9px;
   text-transform: uppercase;
     color:var(--third-text-color);
     margin-bottom: 20px;
-  
+  text-transform: uppercase;
 }
 
 .network-icons {
