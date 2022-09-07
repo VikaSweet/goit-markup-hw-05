@@ -852,13 +852,12 @@ margin-left: 30px;
 margin-top: 30px;
 flex-basis: calc( (100% - 3 * 30px) / 3);
 box-sizing: border-box;
-overflow: hidden;
+
 }
 .border-card {
   border: 1px solid #eee;
   padding: 20px 24px;
-  z-index: 1;
-  }
+    }
   .nav-img-web:hover, .nav-img-web:focus {
     border: 1px solid #EEEEEE;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
@@ -867,6 +866,10 @@ overflow: hidden;
   }
    .card-tumb {
     position: relative;
+  }
+  .products {
+    position: relative;
+    overflow: hidden;
   }
    .card-overlay {
 position: absolute;
