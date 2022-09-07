@@ -852,7 +852,7 @@ margin-left: 30px;
 margin-top: 30px;
 flex-basis: calc( (100% - 3 * 30px) / 3);
 box-sizing: border-box;
-overflow: hidden;
+
 }
 .border-card {
   border: 1px solid #eee;
@@ -866,10 +866,9 @@ overflow: hidden;
   }
    .card-tumb {
     position: relative;
+    overflow: hidden;
   }
-  .products {
-    position: relative;
-  }
+  
    .card-overlay {
 position: absolute;
 width: 100%;
@@ -877,18 +876,15 @@ height: 100%;
 left: 0;
 top: 0;
 background: rgba(33, 150, 243, 0.9);
-opacity:0 ;
 transform: translateY(100%);
 transition: transform var(--timing-function);
   }
   .link-img:hover .card-overlay {
-opacity: 1;
 transform: translateY(0);
-transition: transform var(--timing-function);
   }
   
   .card-action {
-   display: block;
+   display: flex;
    position: absolute;
    width: 322px;
    height: 168px;
@@ -901,7 +897,7 @@ transition: transform var(--timing-function);
   .link-img:hover .card-action {
     opacity: 1;
     transform: translateY(0);
-    transition: transform var(--timing-function);
+    transition: opacity var(--timing-function);
   }
   
   .text-actions {
