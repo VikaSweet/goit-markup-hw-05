@@ -852,7 +852,7 @@ margin-left: 30px;
 margin-top: 30px;
 flex-basis: calc( (100% - 3 * 30px) / 3);
 box-sizing: border-box;
-position: relative;
+overflow: hidden;
 }
 .border-card {
   border: 1px solid #eee;
@@ -864,25 +864,23 @@ position: relative;
     0px 4px 4px rgba(0, 0, 0, 0.06), 
     1px 4px 6px rgba(0, 0, 0, 0.16);
   }
-  .card-tumb {
+   .card-tumb {
     position: relative;
   }
-   .card-tumb::before {
-  display: block;
-  position: absolute;
-  content: "";
+   .card-overlay {
+position: absolute;
 width: 100%;
-height: 294px;
+height: 100%;
 left: 0;
 top: 0;
 background: rgba(33, 150, 243, 0.9);
 opacity:0 ;
-transform: translateY(100%);
+transform: translateY(-100%);
 transition: transform var(--timing-function);
   }
-  .link-img:hover .card-tumb::before {
+  .link-img:hover .card-overlay {
 opacity: 1;
-transform: translateY(0);
+transform: translateY(100%);
 transition: transform var(--timing-function);
   }
   
