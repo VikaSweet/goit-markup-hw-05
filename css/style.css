@@ -857,6 +857,7 @@ overflow: hidden;
 .border-card {
   border: 1px solid #eee;
   padding: 20px 24px;
+  z-index: 1;
   }
   .nav-img-web:hover, .nav-img-web:focus {
     border: 1px solid #EEEEEE;
@@ -901,7 +902,7 @@ transition: transform var(--timing-function);
     transition: transform var(--timing-function);
   }
   
-  .text-action {
+  .text-actions {
     font-family: var(--primary-font-family);
     font-style: normal;
     font-weight: 400;
