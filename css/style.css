@@ -875,12 +875,12 @@ left: 0;
 top: 0;
 background: rgba(33, 150, 243, 0.9);
 opacity:0 ;
-transform: translateY(-100%);
+transform: translateY(100%);
 transition: transform var(--timing-function);
   }
   .link-img:hover .card-overlay {
 opacity: 1;
-transform: translateY(100%);
+transform: translateY(-100%);
 transition: transform var(--timing-function);
   }
   
