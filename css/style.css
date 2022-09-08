@@ -426,6 +426,7 @@ position: relative;
   display: flex;
   position: absolute;
   justify-content: center;
+  align-items: center;
   content: "";
   width: 100%;
  bottom: 0;
