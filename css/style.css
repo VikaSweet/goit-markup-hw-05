@@ -646,7 +646,9 @@ flex-direction: column;
 justify-content: left;
 margin-top: 20px;
 }
-
+.footer-contacts:last-child {
+  margin-top: 20px;
+}
 .footer-link {
   display:flex;
   transition: color var(--timing-function);
