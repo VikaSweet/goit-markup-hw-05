@@ -595,7 +595,7 @@ transition: background-color var(--timing-function),color var(--timing-function)
   border: 1px solid rgba(175, 177, 184, 1);
   width: 170px;
   height: 92px;
-  fill: rgba(175, 177, 184, 1)
+  fill: rgba(175, 177, 184, 1);
   transition: border-color var(--timing-function),fill var(var(--timing-function));
 }
 .icon-clients:first-child {
@@ -607,7 +607,7 @@ transition: background-color var(--timing-function),color var(--timing-function)
 .clients-svg {
   display: block;
    content: "";
-}
+  }
   .clients-link:hover {
   border-color: var(--accent-color);
   fill:var(--accent-color);
