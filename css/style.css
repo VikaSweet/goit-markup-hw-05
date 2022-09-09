@@ -250,7 +250,7 @@ margin-right: auto;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;;
-  transition: background-color var(--timing-function), box-shadow var(--timing-function), border-radius var(--timing-function);
+  transition: background-color var(--timing-function), box-shadow var(--timing-function);
 }
 .text-button-order {
   padding: 10px 32px;
@@ -312,7 +312,8 @@ position: absolute;
   padding: 0;
   display: flex;
   align-items: center;
-  justify-content: center
+  justify-content: center;
+  cursor: pointer;
 }
 /*--best-item---------*/
 .section-best-item {
@@ -539,7 +540,7 @@ gap: 10px;
   color: rgba(175, 177, 184, 1);
   border-radius: 50%;
 fill: currentColor;
-transition: background-color var(--timing-function),color var(--timing-function), fill var(--timing-function);
+transition: background-color var(--timing-function),color var(--timing-function);
 }
 
 .link-svg {
@@ -597,7 +598,7 @@ transition: background-color var(--timing-function),color var(--timing-function)
   width: 170px;
   height: 92px;
   fill: rgba(175, 177, 184, 1);
-  transition: border-color var(--timing-function),fill var(var(--timing-function));
+  transition: border-color var(--timing-function),fill var(--timing-function);
 }
 .icon-clients:first-child {
   margin-left: 0;
@@ -898,6 +899,11 @@ transform: translateY(0);
    transition: transform var(--timing-function);
   }
   .link-img:hover .card-action {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity var(--timing-function);
+  }
+  .link-img:focus .card-action {
     opacity: 1;
     transform: translateY(0);
     transition: opacity var(--timing-function);
